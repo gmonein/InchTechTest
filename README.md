@@ -19,8 +19,8 @@ Step 0
 ```bash
 rails new inch
 cd inch
-rails g model person:string reference:string email:string home_phone_number:string mobile_phone_number:string firstname:string lastname:string address:string
-rails g model building:string reference:string address:string zip_code:string city:string country:string manager_name:string
+rails g model person reference:string email:string home_phone_number:string mobile_phone_number:string firstname:string lastname:string address:string
+rails g model building reference:string address:string zip_code:string city:string country:string manager_name:string
 ```
 
 Step 1
