@@ -1,0 +1,9 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  people: one
+  manager_name: MyString
+
+two:
+  people: two
+  manager_name: MyString

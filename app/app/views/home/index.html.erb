@@ -1,0 +1,15 @@
+upload peoples
+<br>
+<%= form_tag upload_peoples_path, method: :post, multipart: true do |f| %>
+  <input type="file" id="peoples_csv" name="peoples_csv" accept=".csv">
+  <br>
+  <input type='Submit'>
+<% end %>
+<br>
+upload buildings
+<br>
+<%= form_tag upload_buildings_path, method: :post, multipart: true do |f| %>
+  <input type="file" id="buildings_csv" name="buildings_csv" accept=".csv">
+  <br>
+  <input type='Submit'>
+<% end %>

@@ -1,0 +1,22 @@
+version: '3.2'
+services:
+  app:
+    build:
+      context: ./app
+      dockerfile: ./Dockerfile
+    volumes:
+      - "./app:/app"
+    networks:
+      - net
+    ports:
+      - "3000:3000"
+    depends_on:
+      - psql
+  psql:
+    image: postgres:12
+    environment:
+      - "POSTGRES_HOST_AUTH_METHOD=trust"
+    networks:
+      - net
+networks:
+  net:
